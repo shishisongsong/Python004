@@ -1,0 +1,17 @@
+<head>
+    <title>Comments</title>
+</head>
+<body>
+<p>电影名称: {{ film_name }}</p>
+<br/>
+<br/>
+{% for comment in comments %}
+    <div>
+        星级: {{ comment.star }}<br/>
+        评论时间: {{ comment.comment_time }}<br/>
+        短评内容: {{ comment.short }}
+    </div>
+    <br/>
+{% endfor %}
+
+</body>
